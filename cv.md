@@ -23,8 +23,11 @@ Mostly, I have been developing university course projects.
 &nbsp;
 ## Education
 **Belarusian National Technical University** (September 2016 – June 2020) : Faculty of Information Technologies And Robotics
+* _```learned Java, C#, Python, C++, JavaScript, HTML, MSSQL, Oracle RDBMS, Firebase and many other programming languages and database management systems```_
 
 **Self-education** (September 2016 – present time) : Immense expands of the Internet
+* _```explored the principles of working with Git;```_
+* _```studied various graphic editors as well as practiced in creating and changing different varieties of templates```_
 &nbsp;
 ## Foreign languages
 English: **Intermediate (B1)**  _```*in accordance with CEFR (Common European Framework of Reference)```_
