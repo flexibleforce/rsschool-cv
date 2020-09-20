@@ -1,0 +1,779 @@
+:root {
+    --red-background-color: #EDE4EF;
+    --blue-background-color: #EBFAFF;
+    --dark-blue-color: #2D1863;
+    --bright-purple-color: #6F34FF;
+    --address-icon-color: #EDF0F7;
+    --gray-text-color: #9799B6;
+    --light-yellow-color: #EDE37F;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(120deg, var(--red-background-color) 0%, var(--blue-background-color) 100%);  
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.info,
+.info-contact > div > .contact-icon a:hover i { color: var(--dark-blue-color); }
+
+.info-image-rectangle {
+    width: 88%;
+    height: 400px;
+    background: url('https://i.imgur.com/jzbKHAZ.jpg') var(--bright-purple-color);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 0 35px 35px;
+}
+
+.info-image-rectangle .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bright-purple-color);
+    opacity: 0.6;
+    border-radius: 0 0 35px 35px;
+}
+
+.info-image div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-image:hover,
+.project-rectangle:hover {
+    transform: scale(1.02);
+    transition: all 600ms;
+}
+
+.shadow div {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.038),
+    0 12.5px 10px rgba(0, 0, 0, 0.04),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.046),
+    0 70px 80px rgba(0, 0, 0, 0.09),
+    0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 -6.7px 5.3px rgba(0, 0, 0, 0.038),
+    0 -12.5px 10px rgba(0, 0, 0, 0.04),
+    0 -22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 -41.8px 33.4px rgba(0, 0, 0, 0.046),
+    0 -70px 80px rgba(0, 0, 0, 0.09)
+}
+
+.info-image-text { display: block; }
+
+.info-text { font-weight: 200; }
+
+.info-text > div { margin-top: 30px; }
+
+.info-text { margin: 0 20px; }
+
+.info-contact-personality { margin: 0 6%; }
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 43px;
+}
+
+.position {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 33px;
+}
+
+.about {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.info-contact-personality {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.info-contact,
+.info-qualities,
+.hobbies { margin-top: 40px; }
+
+.info-contact { margin-top: 35px; }
+
+.contact-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.contact-icon i {
+    color: var(--bright-purple-color);
+    font-size: 1.6em;
+}
+
+.contact-text {
+    font-size: 15px;
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+.email,
+.phone,
+.address,
+.github {
+    margin-top: 14px;
+    display: inline-flex;
+    display: table; 
+}
+
+.qualities-title,
+.hobbies-title {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+ul {
+    padding-inline-start: 27px;
+    padding-inline-end: 18px;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+}
+
+li {
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+li span {
+    line-height: 1.4em;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.columns {
+    display: inline-block;
+    margin: 12px 0;
+}
+
+.paint,
+.film,
+.swim,
+.piano,
+.books,
+.theatre,
+.jog,
+.cook {
+    display: table;
+    margin-top: 15px;
+}
+
+.hobby-image { margin-right: 15px; }
+
+.hobby-text {
+    font-size: 15px;
+    display: table-cell; 
+    vertical-align: middle;
+    line-height: 21px;
+}
+
+.education {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: var(--dark-blue-color);
+}
+
+.rectangle {
+    width: 88%;
+    height: 650px;
+    background: white;
+    border-radius: 25px 50px 25px 25px;
+    margin: 0 auto;
+    position: relative;
+    height: fit-content;
+}
+
+.address-icon {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.address-icon i {
+    color: var(--address-icon-color);
+    font-size: 4em;
+}
+
+.education-title-address {
+    margin: 25px 25px 10px;
+    display: inline-flex;
+}
+
+.education-title {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.education-institutions {
+    font-weight: 300;
+    margin: 22px 25px 0;
+}
+
+.education-address {
+    font-weight: 400;
+    position: absolute;
+    font-size: 15px;
+    top: 80px;
+    margin-left: 117px;
+    color: var(--gray-text-color);
+}
+
+.institution-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.institution-knowledges {
+    color: var(--gray-text-color);
+    font-size: 12.5px;
+}
+
+.institution-period {
+    font-size: 13.4px;
+    border-radius: 20px;
+    padding: 5px 12px;
+    background-color: var(--light-yellow-color);
+    text-align: center;
+    height: fit-content;
+}
+
+.institution-text {
+    margin-top: 10px;
+    line-height: 1em;
+    display: inline-block;
+}
+
+.institution-name-knowledges {
+    display: inline-block;
+    width: auto;
+    margin-top: 10px;
+}
+
+.institution-name,
+.institution-knowledges,
+.institution-period { margin-top: 20px; }
+
+.self .institution-text .institution-period { margin-left: 0; }
+
+.self .institution-text { margin-bottom: 28px; }
+
+.projects { margin: 30px 0; }
+
+.projects-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--dark-blue-color);
+    font-weight: 900;
+}
+
+.projects-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-rectangle {
+    width: 200px;
+    height: 178px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.project-rectangle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bright-purple-color);
+    opacity: 0.6;
+}
+
+.project-left .project-rectangle {
+    border-radius: 25px 25px 0 0;
+    background-color: var(--bright-purple-color);
+    background-image: url('https://www.xantheberkeley.com/wp-content/uploads/2014/02/xantheberkeley_orangeribbons016.jpg');
+    background-size: cover;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.project-left .project-rectangle::after { border-radius: 25px 25px 0 0; }
+
+.project-right .project-rectangle {
+    background-color: var(--bright-purple-color);
+    background-image: url('https://images.unsplash.com/photo-1518281361980-b26bfd556770?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1898&q=80');
+    background-size: cover;
+    border-radius: 0 0 25px 25px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.project-right .project-rectangle::after { border-radius: 0 0 25px 25px; }
+
+.project-center .project-rectangle {
+    width: 260px;
+    height: 213px;
+    background-color: var(--bright-purple-color);
+    background-image: url('https://images.unsplash.com/photo-1558986377-c44f6a2b50f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80');
+    background-size: cover;
+    z-index: 1;
+}
+
+.project-center .project-rectangle::after { border-radius: 25px; }
+
+.languages {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-blue-color);
+    margin: 30px 0;
+}
+
+.languages-title {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 26px;
+}
+
+.languages-list-institutions { display: inline-block; }
+
+.languages-text {
+    font-weight: 300;
+    width: auto;
+}
+
+.languages-list,
+.languages-remark { margin: 0 6%; }
+
+.languages-list {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.languages-remark {
+    color: var(--gray-text-color);
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 18px;
+}
+
+.languages-institutions {
+    display: inline-block;
+    margin: 0 6%;
+}
+
+.language-rectangle {
+    background: white;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 35px;
+    position: relative;
+    height: fit-content;
+    padding: 30px 20px;
+}
+
+.language-rectangle:hover { box-shadow: 0 20px 80px rgba(0, 0, 0, 0.036); }
+
+.language-name {
+    font-weight: 500;
+    line-height: 24pt;
+    text-align: center;
+    font-size: 17px;
+}
+
+.language-address {
+    display: inline-flex;
+    margin: 20px 0;
+}
+
+.language-address-icon i { font-size: 20px; }
+
+.language-address-text {
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 20px;   
+}
+
+.language-period {
+    font-weight: 300;
+    font-size: 13.4px;
+    background-color: var(--light-yellow-color);
+    border-radius: 20px;
+    padding: 5px 12px;
+    text-align: center;
+    height: fit-content;
+}
+
+.language-methods {
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+@media (min-width: 375px) {
+    .education-address { margin-left: 50%; }
+
+    .project-center .project-rectangle { width: 300px };
+}
+
+@media (min-width: 425px) {
+    .project-center .project-rectangle {
+        width: 340px;
+        height: 210px;
+    }
+
+    .project-left .project-rectangle,
+    .project-right .project-rectangle { height: 160px; }
+
+    .language-period { padding: 7px 12px; }
+
+    .education-address { margin-left: 56%; }
+}
+
+@media (min-width: 768px) {
+    .info-image-text { display: inline-flex; }
+
+    .info-text { margin: 8% 0 0 0; }
+
+    .info-image { margin: 0 30px; }
+
+    .info-image-rectangle {
+        width: 250px;
+        border-radius: 0 0 35px 35px;
+    }
+
+    .shadow div {
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.038),
+        0 12.5px 10px rgba(0, 0, 0, 0.04),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.046),
+        0 70px 80px rgba(0, 0, 0, 0.09)
+    }
+
+    .name { font-size: 38px; }
+
+    .position { font-size: 30px; }
+
+    .about {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .info-contact-personality {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .info-contact { margin-right: 4px; }
+
+    .info-qualities { margin-top: 10px; }
+
+    .hobbies { margin-top: 30px; }
+
+    .columns { display: inline-flex; }
+
+    .first-column { margin-right: 60px; }
+
+    .education-address {
+        font-size: 16px;
+        top: 34px;
+        margin-left: 492px;
+        color: var(--dark-blue-color);
+    }
+
+    .education-institutions { margin: 0 25px; }
+
+    .institution-knowledges { font-size: 14px; }
+
+    .institution-text { margin-top: 0; }
+
+    .institution-name { font-size: 18px; }
+
+    .projects-links { flex-direction: row; }
+
+    .project-center .project-rectangle {
+        width: 300px;
+        height: 270px;
+    }
+    
+    .project-left .project-rectangle { border-radius: 25px 0 0 25px; }
+
+    .project-left .project-rectangle::after { border-radius: 25px 0 0 25px; }
+    
+    .project-right .project-rectangle { border-radius: 0 25px 25px 0; }
+
+    .project-right .project-rectangle::after { border-radius: 0 25px 25px 0; }
+    
+    .project-rectangle {
+        width: 152px;
+        height: 195px;
+    }
+
+    .education,
+    .projects,
+    .languages { margin-top: 85px; }
+
+    .languages-list-institutions,
+    .languages-institutions {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .languages-list { font-size: 18px; }
+
+    .languages-remark { font-size: 14px; }
+
+    .language-rectangle { width: 250px; }
+
+    .languages-second-column > div > .language-rectangle { margin-top: 20px; }
+
+    .languages-second-column > div:last-child { margin-left: 20px; }
+    
+    .languages-second-column {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container { max-width: 1024px; }
+
+    .info,
+    .education,
+    .projects { margin-bottom: 185px; }
+
+    .languages { margin-bottom: 120px; }
+    
+    .info-image-text { display: inline-flex; }
+
+    .info-image { margin: 0 20px 0 5px; }
+
+    .info-text {
+        height: fit-content;
+        margin-top: 60px;
+        margin-left: 43px;
+    }
+    
+    .name { font-size: 56px; }
+    
+    .position { font-size: 41px; }
+    
+    .about { font-size: 20px; }
+    
+    .info-contact-personality {
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        flex-wrap: nowrap;
+    }
+
+    .info-qualities,
+    .hobbies { margin-top: 10px; }
+
+    .info-contact {
+        margin-top: 40px;
+        margin-right: 0;
+        width: 300px;
+        line-height: 30px;
+    }
+
+    .email,
+    .phone,
+    .address,
+    .github { line-height: 40px; }
+
+    .info-qualities { margin-left: 20px; }
+
+    ul { margin-block-start: 2em; }
+
+    .hobbies { margin-left: 20px; }
+  
+    .columns {
+        display: inline-flex;
+        margin-top: 1em;
+        justify-content: space-between;
+    }
+
+    .hobby-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .first-column {
+        width: 230px;
+        margin-right: 25px;
+    }
+
+    .second-column { width: 135px; }
+
+    li {
+        font-size: 9px;
+        line-height: 27px;
+    }
+
+    li span {
+        line-height: 1.3em;
+        font-size: 15px;
+    }
+    
+    .rectangle {
+        width: 586px;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    .address-icon i { font-size: 5em; }
+    
+    .education-title {
+        font-size: 34px;
+        padding: 10px 0 0 15px;
+    }
+    
+    .education-address {       
+        font-size: 18px;      
+        top: 46px;
+        margin-left: 816px;
+        color: var(--dark-blue-color); 
+    }
+    
+    .education-institutions { margin: 0 25px; }
+    
+    .institution-text { display: inline-flex; }
+
+    .self .institution-text { margin-bottom: 4px; }
+    
+    .institution-name-knowledges {
+        width: 630px;
+        margin: 0 15px 15px;
+    }
+
+    .self .institution-text .institution-name-knowledges { margin-bottom: 35px; }
+    
+    .institution-name {
+        font-size: 21px;
+        margin-top: 8px;
+    }
+    
+    .institution-knowledges {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .institution-period {
+        font-size: 14px;
+        border-radius: 25px;
+        padding: 9px 18px;
+    }
+    
+    .self .institution-text .institution-period { margin-left: 50px; }
+    
+    .projects-title { font-size: 34px; }
+    
+    .projects-links { flex-direction: row; }
+    
+    .project-center .project-rectangle {
+        width: 367px;
+        height: 300px;
+    }
+    
+    .project-left .project-rectangle { border-radius: 25px 0 0 25px; }
+    
+    .project-right .project-rectangle { border-radius: 0 25px 25px 0; }
+    
+    .project-rectangle {
+        width: 220px;
+        height: 195px;
+    }
+
+    .languages { margin-top: 50px; }
+    
+    .languages-title {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+    
+    .languages-list-institutions { display: inline-flex; }
+
+    .languages-list {
+        margin: 0 20px 0 0;
+        font-size: 21px;
+    }
+
+    .languages-remark {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .languages-list,
+    .languages-remark { margin: 10px 0 0 20px; }
+    
+    .languages-text { width: 370px; }
+      
+    .languages-institutions {
+        display: inline-flex;
+        margin: 0 0 0 50px;
+    }
+    
+    .language-rectangle {
+        height: fit-content;
+        width: 70%;
+    }
+
+    .languages-first-column {
+        width: 48%;
+        margin-right: 30px;
+    }
+
+    .languages-second-column {
+        width: 400px;
+        display: inline-block;
+    }
+
+    .languages-first-column > div > .language-rectangle {
+        width: 100%;
+        margin-top: 40%;
+    }
+
+    .languages-second-column > div > .language-rectangle { margin: 0 0 20px 9%; }
+
+    .languages-second-column > div:last-child { margin-left: 0; }
+}
