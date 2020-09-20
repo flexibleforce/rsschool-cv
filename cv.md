@@ -31,3 +31,5 @@ Mostly, I have been developing university course projects.
 &nbsp;
 ## Foreign languages
 English: **Intermediate (B1)**  _```*in accordance with CEFR (Common European Framework of Reference)```_
+
+I attended the semi-annual English language courses (October 2018 – January 2019 & June 2020 – September 2020). Moreover, I spend a couple of minutes every day reading articles, books and watching videos in English.
